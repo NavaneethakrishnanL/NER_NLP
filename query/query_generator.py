@@ -1,3 +1,4 @@
+#query genearator.py
 def generate_mongo_query(entities):
 
     if not entities:
