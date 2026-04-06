@@ -7,12 +7,12 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from utils.text_preprocessor import preprocess_text
 from ner.entity_extractor import extract_entities
 from query.query_generator import generate_mongo_query
-from database.mock_query_executor import MockMongoExecutor
+from database.mogo_connector import MongoDBConnector
 
 
 def main():
 
-    executor = MockMongoExecutor()
+    executor = MongoDBConnector()
 
     while True:
 
